@@ -35,5 +35,17 @@ public:
         cout << "push value: " << value << endl;
         return value;
     }
-    
+    //pop operation: Remove the topmost elemen from the stack
+    void pop()
+    {
+        if (isEmpty())
+        {
+            cout << "stack is empty." << endl;
+        }
+        Node *temp = top;
+        top = top->next;
+        cout << "Popped value: " << top->data << endl;
+    }
+
+    //peel/top operation: Rtrive the value of the topset element without removing
 };
