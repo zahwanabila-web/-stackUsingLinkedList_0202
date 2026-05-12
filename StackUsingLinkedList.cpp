@@ -122,6 +122,7 @@ int main()
             break;
         default:
             cout << "invalid choice. Try again." << endl;
+            break;
         }
     }
 }
