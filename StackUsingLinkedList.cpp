@@ -48,4 +48,19 @@ public:
     }
 
     //peel/top operation: Rtrive the value of the topset element without removing
+    void peek()
+    {
+        if (top == NULL)
+        {
+            cout << "List is empty." << endl;
+        }
+        else
+        {
+            Node *current = top;
+            while (current != NULL)
+            {
+                
+            }
+        }
+    }
 };
