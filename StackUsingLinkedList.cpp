@@ -76,7 +76,7 @@ public:
 
 int main()
 {
-    stack satck;
+    stack stack;
 
     int choice = 0;
     int value;
@@ -86,8 +86,18 @@ int main()
         cout << "1.push\n";
         cout << "2.pop\n";
         cout << "3.peek\n";
-        cout << "4.exit\n";
+        cout << "4.Exit\n";
         cout << "Enter your choice: ";
         cin >> choice;
+
+        switch (choice)
+        {
+        case 1:
+            cout << "Enter the value to push:";
+            cin >> value;
+            stack.push(value); //push the entered value onto the stack
+            break;
+
+        }
     }
 }
